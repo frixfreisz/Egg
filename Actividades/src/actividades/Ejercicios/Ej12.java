@@ -29,17 +29,15 @@ public class Ej12 {
                 System.out.println("cadena correcta");
                 correctas++;
                 
-            }else if(("&&&&&".equals(cadena))
-){
+            }else if(("&&&&&".equals(cadena)))
+{
                 
                 
             }else{
                System.out.println("cadena incorrecta");
                 incorrectas++;
             }
-             
-        
-          
+         
         }while (! cadena.equals("&&&&&"));
         System.out.println("Se encontro una frase FDE");
         System.out.println("correctas = " + correctas);
