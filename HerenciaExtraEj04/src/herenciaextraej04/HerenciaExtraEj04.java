@@ -5,6 +5,8 @@
  */
 package herenciaextraej04;
 
+import servicio.ServFacu;
+
 /**
  *
  * @author Carlitos
@@ -15,7 +17,9 @@ public class HerenciaExtraEj04 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        ServFacu s = new ServFacu();
+        s.datosPersona();
+        s.mostrarLista();
     }
     
 }

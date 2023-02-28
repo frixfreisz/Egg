@@ -171,5 +171,27 @@ public void menu(){
             break;
     }
 }
-    
+     //MOSTRAR CAMPING CON RESTAURANT
+    public void mostrarRestaurant() {
+        System.out.println("\nLos campings con restaurant son:");
+        for (Alojamiento aux : lista) {
+            if (aux instanceof Camping) {
+                if (((Camping) aux).getRestaurante()) {
+                    System.out.println(((Camping) aux).getNombre());
+                }
+            }
+        }
+    }
+
+    //MOSTRAR RESIDENCIAS CON DESCUENTO
+    public void mostrarDescuento() {
+        System.out.println("\nLas Residencias con descuento son:");
+        for (Alojamiento aux : lista) {
+            if (aux instanceof Residencia) {
+                if (((Residencia) aux).getDescuentoGremio()) {
+                    System.out.println(((Residencia) aux).getNombre());
+                }
+            }
+        }
+    }
 }

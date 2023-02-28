@@ -30,7 +30,7 @@ public class Estudiante extends Persona {
 
     @Override
     public String toString() {
-        return super.toString() +"\nDesempeño: Estudiante" + "\nCurso: " + curso + "---------------------------------";
+        return super.toString() +"\nDesempeño: Estudiante" + "\nCurso: " + curso + "\n---------------------------------";
     }
     
     
