@@ -9,16 +9,18 @@ package entidades;
  *
  * @author Carlitos
  */
-public class Profesor extends Persona {
+public class Profesor extends Empleados {
     private String departamento;
 
     public Profesor() {
     }
 
-    public Profesor(String departamento, String nombrePersona, String apellidoPersona, long dni, String estadoCivil) {
-        super(nombrePersona, apellidoPersona, dni, estadoCivil);
+    public Profesor(String departamento, int añoIncorporacion, int numeDespacho, String nombrePersona, String apellidoPersona, long dni, String estadoCivil) {
+        super(añoIncorporacion, numeDespacho, nombrePersona, apellidoPersona, dni, estadoCivil);
         this.departamento = departamento;
     }
+
+ 
 
     public String getDepartamento() {
         return departamento;

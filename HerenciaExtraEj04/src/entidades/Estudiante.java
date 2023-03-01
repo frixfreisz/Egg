@@ -9,7 +9,7 @@ package entidades;
  *
  * @author Carlitos
  */
-public class Estudiante extends Persona {
+public final class Estudiante extends Persona {
     private String curso;
 
     public Estudiante() {

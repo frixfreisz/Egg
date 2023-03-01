@@ -19,7 +19,8 @@ public class HerenciaExtraEj04 {
     public static void main(String[] args) {
         ServFacu s = new ServFacu();
         s.datosPersona();
-        s.mostrarLista();
+        s.menu();
+        
     }
     
 }
