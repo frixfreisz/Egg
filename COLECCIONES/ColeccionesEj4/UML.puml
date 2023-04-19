@@ -1,0 +1,24 @@
+@startuml
+annotation java.lang.Override
+class Comparador.Comparador
+class Entidad.Pelicula
+class Servicios.ServPelicula
+class coleccionesej4.ColeccionesEj4
+class java.util.ArrayList
+class java.util.Collections
+class java.util.Comparator
+class java.util.Objects
+class java.util.Scanner
+Comparador.Comparador ..> java.lang.Override
+Comparador.Comparador ..> Entidad.Pelicula
+Comparador.Comparador ..> java.util.Comparator
+Entidad.Pelicula ..> java.lang.Override
+Entidad.Pelicula ..> java.util.Objects
+Servicios.ServPelicula ..> Comparador.Comparador
+Servicios.ServPelicula ..> Entidad.Pelicula
+Servicios.ServPelicula ..> java.util.ArrayList
+Servicios.ServPelicula ..> java.util.Collections
+Servicios.ServPelicula ..> java.util.Scanner
+coleccionesej4.ColeccionesEj4 ..> Servicios.ServPelicula
+coleccionesej4.ColeccionesEj4 ..> java.util.Scanner
+@enduml

@@ -1,0 +1,54 @@
+
+package actividades.Ejercicios;
+
+import java.util.Scanner;
+
+public class Ej20 {
+
+    public static void main(String[] args) {
+        Scanner leer = new Scanner(System.in);
+        
+        System.out.println("Tamaño del cuadrado?");
+        int n = leer.nextInt();
+        int[][] cuadrado = new int[n][n];
+        int cC = 0, cF = 0, cD1 = 0, cD2 = 0;
+        
+        System.out.println("Ingresa los numero del cuadrado");
+        for (int f = 0; f < cuadrado.length; f++) {
+            for (int c = 0; c < cuadrado.length; c++) {
+                cuadrado[f][c] = leer.nextInt();
+                
+            }
+            System.out.println("");
+        }
+        System.out.println("");
+        for (int f = 0; f < cuadrado.length; f++) {
+            for (int c = 0; c < cuadrado.length; c++) {
+                System.out.print(cuadrado[f][c]+"  ");
+                
+            }
+            System.out.println("");
+        }
+        for (int f = 0; f < cuadrado.length; f++) {
+            for (int c = 0; c < cuadrado.length; c++) {
+                cF = cF + cuadrado[0][f];
+                cC = cC + cuadrado[c][0];
+                cD1= cD1 + cuadrado[f][f];
+                cD2 = cD2 + cuadrado [c][c];
+                
+                
+            }
+        }
+        if (cC == cF && cF == cD1){
+                System.out.println("El cuadrado es MAGICO");
+                
+        }else{
+               System.out.println("No es un cuadrado magico");
+    }
+    }
+}
+        
+        
+
+    
+

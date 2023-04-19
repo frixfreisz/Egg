@@ -1,0 +1,5 @@
+@startuml
+annotation java.lang.Override
+class Entidad.Mascota
+Entidad.Mascota ..> java.lang.Override
+@enduml
